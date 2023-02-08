@@ -20,7 +20,7 @@ namespace SportNow.Views
 
 		protected async override void OnAppearing()
 		{
-			base.OnAppearing(); //On
+			base.OnAppearing(); //On Test
 			CrossDeviceOrientation.Current.LockOrientation(DeviceOrientations.Portrait);
 
 			var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
