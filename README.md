@@ -1,3 +1,3 @@
 ﻿# SPORTNOW
 
-Este é o Repositório da App Xamarin da Ippon Karate Portugal.s
+Este é o Repositório da App Xamarin da Ippon Karate Portugal..

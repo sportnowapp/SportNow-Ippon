@@ -11,7 +11,7 @@ namespace SportNow
     {
 
         public static string servername = "plataforma.ippon.pt";
-        public static string server = servername;
+        public static string server = servername; //servername
         public static string images_URL = Device.RuntimePlatform == Device.Android? "http://" + server + "/upload/" : "https://" + server + "/upload/";
         //public static string server = "localhost";
 
