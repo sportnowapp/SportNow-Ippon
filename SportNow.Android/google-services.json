@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "383006865133",
+    "project_id": "aksl-app",
+    "storage_bucket": "aksl-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383006865133:android:fddf0133e3991fcf11fee4",
+        "android_client_info": {
+          "package_name": "com.milliontask.akslapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383006865133-la8l3kc59orosi6b02nimkbhaie6jnmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVmN09PCpUAKKkFpspnQBJf99_1y5Tq3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383006865133-la8l3kc59orosi6b02nimkbhaie6jnmn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "383006865133-0irhql7fee6u2937pcjr4n1tfc9eukgu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.nksl.userapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

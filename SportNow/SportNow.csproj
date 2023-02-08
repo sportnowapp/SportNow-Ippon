@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Plugin.FirebasePushNotification" Version="3.4.35" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="20.3.0.59" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.2.0.534" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Plugin.DeviceOrientation" Version="1.0.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\Data\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\" />
+    <Folder Include="Model\" />
+    <Folder Include="Resourses\" />
+    <Folder Include="Custom Views\" />
+    <Folder Include="Views\Competition\" />
+    <Folder Include="Views\Grade\" />
+    <Folder Include="Views\Fee\" />
+    <Folder Include="Views\Event\" />
+    <Folder Include="Views\Do\" />
+    <Folder Include="Model\Charts\" />
+    <Folder Include="Views\ExaminationSession\" />
+    <Folder Include="Views\Equipment\" />
+    <Folder Include="Views\Attendance\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Views\ExaminationSession\ExaminationEvaluation\" />
+    <Folder Include="Views\MonthFee\" />
+    <Folder Include="Views\Invoice\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Attendance\EquipamentTypePageCS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resourses\futura medium condensed bt.ttf" />
+    <None Remove="Views\ExaminationSession\ExaminationEvaluation\" />
+    <None Remove="Plugin.DeviceOrientation" />
+    <None Remove="Views\MonthFee\" />
+    <None Remove="Views\Invoice\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resourses\futura medium condensed bt.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\11.1.0.26\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v10.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

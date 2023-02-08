@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionName="2.3.5" package="com.milliontask.akslapp" android:versionCode="45">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+	<application android:label="Ippon Karate" android:theme="@style/MainTheme" android:icon="@drawable/logoikp1024" android:networkSecurityConfig="@xml/network_security_config">
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="${applicationId}" />
+			</intent-filter>
+		</receiver>
+		<meta-data android:name="firebase_analytics_collection_deactivated" android:value="false" tools:replace="android:value" />
+	</application>
+</manifest>

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E646BDF-BD12-4D7C-94A5-4BB5BC2AC84D}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SportNow.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>SportNow.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+<MtouchExtraArgs>--argument=-FIRDebugEnabled</MtouchExtraArgs>
+<CodesignKey>Apple Development: Hugo Pedro (B4NBCAX478)</CodesignKey>
+<CodesignProvision>VS: org.nksl.userapp Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <CodesignProvision>VS: org.nksl.userapp Development</CodesignProvision>
+    <CodesignKey>Apple Development: Hugo Pedro (B4NBCAX478)</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>Apple Development: Hugo Pedro (B4NBCAX478)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+    <MtouchExtraArgs>--argument=-FIRDebugEnabled</MtouchExtraArgs>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>VS: org.nksl.userapp Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>Apple Development: Hugo Pedro (B4NBCAX478)</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>VS: org.nksl.userapp Development</CodesignProvision>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundButton.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="FirebaseAnalyticsService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado40-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado58-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado80-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado40-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logoipkquadrado1024-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Plugin.FirebasePushNotification">
+      <Version>3.4.35</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfChart">
+      <Version>20.3.0.59</Version>
+    </PackageReference>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.2.0.534</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.CommunityToolkit">
+      <Version>2.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.DeviceOrientation">
+      <Version>1.0.7</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\SportNow\SportNow.csproj">
+      <Project>{731FAB9C-5CD5-4117-814E-BD92AF360B32}</Project>
+      <Name>SportNow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\belt_1_Dan.png" />
+    <BundleResource Include="Resources\belt_1_Dan_bloq.png" />
+    <BundleResource Include="Resources\belt_1_Kyu.png" />
+    <BundleResource Include="Resources\belt_1_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_2_Dan.png" />
+    <BundleResource Include="Resources\belt_2_Dan_bloq.png" />
+    <BundleResource Include="Resources\belt_2_Kyu.png" />
+    <BundleResource Include="Resources\belt_2_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_3_Dan.png" />
+    <BundleResource Include="Resources\belt_3_Dan_bloq.png" />
+    <BundleResource Include="Resources\belt_3_Kyu.png" />
+    <BundleResource Include="Resources\belt_3_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_3_Kyu_Kari.png" />
+    <BundleResource Include="Resources\belt_3_Kyu_Kari_bloq.png" />
+    <BundleResource Include="Resources\belt_4_Dan.png" />
+    <BundleResource Include="Resources\belt_4_Dan_bloq.png" />
+    <BundleResource Include="Resources\belt_4_Kyu.png" />
+    <BundleResource Include="Resources\belt_4_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_4_Kyu_Kari.png" />
+    <BundleResource Include="Resources\belt_4_Kyu_Kari_bloq.png" />
+    <BundleResource Include="Resources\belt_5_Dan.png" />
+    <BundleResource Include="Resources\belt_5_Kyu.png" />
+    <BundleResource Include="Resources\belt_6_Kyu.png" />
+    <BundleResource Include="Resources\belt_6_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_6_Kyu_Kari.png" />
+    <BundleResource Include="Resources\belt_6_Kyu_Kari_bloq.png" />
+    <BundleResource Include="Resources\belt_7_Kyu.png" />
+    <BundleResource Include="Resources\belt_7_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_8_Kyu.png" />
+    <BundleResource Include="Resources\belt_8_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_8_Kyu_Kari.png" />
+    <BundleResource Include="Resources\belt_9_Kyu.png" />
+    <BundleResource Include="Resources\belt_9_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_9_Kyu_Kari.png" />
+    <BundleResource Include="Resources\belt_9_Kyu_Kari_bloq.png" />
+    <BundleResource Include="Resources\boneco_karate.png" />
+    <BundleResource Include="Resources\botaoaksl.png" />
+    <BundleResource Include="Resources\cinto.png" />
+    <BundleResource Include="Resources\kimono.png" />
+    <BundleResource Include="Resources\logo_aksl.png" />
+    <BundleResource Include="Resources\logo_aksl_icon.png" />
+    <BundleResource Include="Resources\logo_aksl_inactive.png" />
+    <BundleResource Include="Resources\logo_fnkp.png" />
+    <BundleResource Include="Resources\logo_fnkp_inactive.png" />
+    <BundleResource Include="Resources\logo_fnkp_seguro.png" />
+    <BundleResource Include="Resources\logo_nksl.png" />
+    <BundleResource Include="Resources\logofnkpaksl.png" />
+    <BundleResource Include="Resources\logomultibanco.png" />
+    <BundleResource Include="Resources\icondo.png" />
+    <BundleResource Include="Resources\iconcalendario.png" />
+    <BundleResource Include="Resources\iconcheck.png" />
+    <BundleResource Include="Resources\iconconvocatoria.png" />
+    <BundleResource Include="Resources\iconequipamentos.png" />
+    <BundleResource Include="Resources\iconinativo.png" />
+    <BundleResource Include="Resources\iconinfogreen.png" />
+    <BundleResource Include="Resources\iconinfowhite.png" />
+    <BundleResource Include="Resources\iconpresencas.png" />
+    <BundleResource Include="Resources\iconshare.png" />
+    <BundleResource Include="Resources\medalha.png" />
+    <BundleResource Include="Resources\perfil.png" />
+    <BundleResource Include="Resources\presencasicon.png" />
+    <BundleResource Include="Resources\fotomais12anos.png" />
+    <BundleResource Include="Resources\fotomenos6anos.png" />
+    <BundleResource Include="Resources\fotomenos12anos.png" />
+    <BundleResource Include="Resources\fotokarategis.png" />
+    <BundleResource Include="Resources\fotomerchandisingaksl.png" />
+    <BundleResource Include="Resources\fotoprotecoescintos.png" />
+    <BundleResource Include="Resources\belt_10_Kyu.png" />
+    <BundleResource Include="Resources\belt_5_Kyu_bloq.png" />
+    <BundleResource Include="Resources\belt_8_Kyu_Kari_bloq.png" />
+    <BundleResource Include="Resources\eventos.png" />
+    <BundleResource Include="Resources\botaoalterarpass.png" />
+    <BundleResource Include="Resources\botaoalmudarconta.png" />
+    <BundleResource Include="Resources\botaologinaluno.png" />
+    <BundleResource Include="Resources\botaologininstrutor.png" />
+    <BundleResource Include="Resources\logo_aksl_round.png" />
+    <BundleResource Include="Resources\logo_aksl_splash.png" />
+    <BundleResource Include="GoogleService-Info.plist" />
+    <BundleResource Include="Resources\fnkpikp.png" />
+    <BundleResource Include="Resources\logo_ikp.png" />
+    <BundleResource Include="Resources\logo_ikp_inactive.png" />
+    <BundleResource Include="Resources\monthfees.png" />
+    <BundleResource Include="Resources\examinationprograms.png" />
+    <BundleResource Include="Resources\attendances.png" />
+    <BundleResource Include="Resources\confirmclasses.png" />
+    <BundleResource Include="Resources\classstats.png" />
+    <BundleResource Include="Resources\iconexames.png" />
+    <BundleResource Include="Resources\logombway.png" />
+    <BundleResource Include="Resources\add.png" />
+    <BundleResource Include="Resources\add_person.png" />
+    <BundleResource Include="Resources\premio_ippon_ouro.png" />
+    <BundleResource Include="Resources\premio_aluno_mes.png" />
+    <BundleResource Include="Resources\mygrades.png" />
+    <BundleResource Include="Resources\mensalidades_alunos.png" />
+    <BundleResource Include="Resources\youtube.png" />
+    <BundleResource Include="Resources\belt_5_Dan_bloq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+</Project>
